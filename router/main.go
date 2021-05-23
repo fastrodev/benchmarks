@@ -2,13 +2,13 @@ package main
 
 import (
 	"github.com/fastrodev/router"
-	"github.com/fastrodev/router/web"
+	"github.com/fastrodev/router/http"
 )
 
 func main() {
 	port := 9000
 	app := router.New()
-	app.Get("/", func(req web.Request, res web.Response) {
+	app.Get("/", func(req http.Request, res http.Response) {
 		res.Send("hello")
 	})
 	app.Listen(port, func() {
