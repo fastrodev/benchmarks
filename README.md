@@ -6,8 +6,8 @@ Router framework vs Standard net/http
 - Memory: 16 GB 3733 MHz LPDDR4X
 - Command: `wrk http://localhost:9000`
 
-### Router Framework
-- Source code: [router/main.go](router/main.go)  	
+### Rider Framework
+- Source code: [rider/main.go](rider/main.go)  	
 - Results:
 ```
 Running 10s test @ http://localhost:9000
