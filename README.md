@@ -13,11 +13,11 @@ Router framework vs Standard net/http
 Running 10s test @ http://localhost:9000
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    94.56us   45.91us   1.55ms   92.98%
-    Req/Sec    44.26k     3.25k   53.75k    89.11%
-  889235 requests in 10.10s, 102.61MB read
-Requests/sec:  88044.39
-Transfer/sec:     10.16MB
+    Latency    89.40us   51.49us   1.53ms   92.58%
+    Req/Sec    47.19k     4.32k   52.35k    77.72%
+  948152 requests in 10.10s, 109.41MB read
+Requests/sec:  93878.51
+Transfer/sec:     10.83MB
 ```
 ### Standard net/http 
 - Source code: [standard/main.go](standard/main.go)  
@@ -26,11 +26,11 @@ Transfer/sec:     10.16MB
 Running 10s test @ http://localhost:9000
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    99.31us  254.38us  12.51ms   99.44%
-    Req/Sec    44.97k     1.68k   47.91k    65.35%
-  903706 requests in 10.10s, 110.32MB read
-Requests/sec:  89475.41
-Transfer/sec:     10.92MB
+    Latency    94.82us   46.17us   1.53ms   92.53%
+    Req/Sec    43.95k     2.14k   54.25k    82.67%
+  883422 requests in 10.10s, 107.84MB read
+Requests/sec:  87464.59
+Transfer/sec:     10.68MB
 ```
 ### Express.js
 - Source code: [express/main.js](express/main.js)  
