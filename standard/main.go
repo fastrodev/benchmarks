@@ -6,10 +6,10 @@ import (
 )
 
 func main() {
-	port := ":9000"
+	port := ":9001"
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("hello world"))
 	})
-	fmt.Println("server started at localhost:9000")
+	fmt.Println("server started at localhost:9001")
 	http.ListenAndServe(port, nil)
 }
